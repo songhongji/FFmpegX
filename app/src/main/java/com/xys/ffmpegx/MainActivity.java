@@ -16,8 +16,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         TextView textView = findViewById(R.id.main_tv);
-        textView.setText(stringFromNDK());
+        textView.setText(avFormatInfo());
     }
 
     public native String stringFromNDK();
+
+    public native String avFormatInfo();
 }
